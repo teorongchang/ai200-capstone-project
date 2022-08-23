@@ -15,7 +15,7 @@ Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorong
 
 ## Code and Resources Used 
 **Python Version:** 3.9 <br>
-**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, plotly, imblearn, xgboost, catboost, lightgbm 
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, plotly, imblearn, xgboost, catboost, lightgbm <br>
 
 ## **Competition Description**
 
@@ -56,9 +56,10 @@ It was found that the training data is largely imbalanced - there are much more 
 
 ![image](https://user-images.githubusercontent.com/33216106/186072493-6ad5d911-0321-40a3-9a15-7cbaed9283c4.png)
 
-0.0    1910 <br>
-1.0     103 <br>
-Name: outcome, dtype: int64 <br>
+| Class | Value |
+| ------------- |:-------------:|
+| 0.0 | 1910 |
+| 1.0 | 103 |
 
 Oversampling using Synthetic Minority Oversampling Technique (SMOTE) will be implemented to trat this class imbalance issue.
 
@@ -89,7 +90,7 @@ Feature Engineering was a major block in this capstone project. The current feat
 
 Using sklearn's `.Pipeline()` function, I have managed to simplfy the modelling process into a more efficient and digistable workflow. The steps within the Pipeline involves:
 1. `SMOTE` function to treat imbalanced data.
-2. `StandardScaler()` function to standardize features by removing the mean and scaling to unit variance. 
+2. Features are mainly numerical in nature. Therefore, `StandardScaler()` function to standardize features by removing the mean and scaling to unit variance. 
 3. Adding `ExtraTreesClassifier`, `LGBMClassifier`, `XGBClassifier`, `CatBoostClassifier`, `GradientBoostingClassifier`, `HistGradientBoostingClassifier`, `RandomForestClassifier` seperately for Model Training.
 
 ## **Model Evaluation**
