@@ -13,6 +13,10 @@ Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorong
 * Performed Hyperparameter Tuning to get optimal prediction AUC.
 * Achieved Top 1 on InClass Kaggle leaderboard (0.88797 AUC) and Top 60 on Global Kaggle leaderboard (0.93162 AUC)
 
+## Code and Resources Used 
+**Python Version:** 3.9 
+**Packages:** pandas, numpy, sklearn, matplotlib, seaborn, plotly, imblearn, xgboost, catboost, lightgbm 
+
 ## **Competition Description**
 
 Adapted from [Facebook Recruiting competition](https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot/), the purpose of this competition is to chase down robots for an online auction site. Human bidders on the site are becoming increasingly frustrated with their inability to win auctions vs. their software-controlled counterparts. As a result, usage from the site's core customer base is plummeting.
