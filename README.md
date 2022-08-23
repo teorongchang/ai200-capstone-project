@@ -121,3 +121,5 @@ To improve the performance of the ExtraTreesClassifier, my group has performed H
 It is important to understand which specific feature(s) have a larger effect on the model that is being used to predict a certain variable. The top 20 features of the model are:
 
 ![image](https://user-images.githubusercontent.com/33216106/186070435-15463b9a-6383-4bd0-b813-b2fc15cd66bd.png)
+
+Time series features such as simultaneous bids within a specific time period can be seen as the main contributors to prediction of bots.
