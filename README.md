@@ -14,7 +14,7 @@ Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorong
 * Achieved Top 1 on InClass Kaggle leaderboard (0.88797 AUC) and Top 60 on Global Kaggle leaderboard (0.93162 AUC).
 
 ## Code and Resources Used 
-**Python Version:** 3.9 
+**Python Version:** 3.9 <br>
 **Packages:** pandas, numpy, sklearn, matplotlib, seaborn, plotly, imblearn, xgboost, catboost, lightgbm 
 
 ## **Competition Description**
