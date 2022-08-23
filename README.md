@@ -2,7 +2,16 @@
 
 ## My top solution for [AI200 Mar 2022: Human or Robot? Capstone Competition](https://www.kaggle.com/competitions/ai200-mar-2022-human-or-bot) 
 
-Please view my codes at this [nbviewer link]()
+Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorongchang/ai200-capstone-project/blob/main/modelling/teorongchang_Capstone_Project_AI200.ipynb)
+
+## **Overview of project**
+
+* Participated in Facebook Recruitment Prediction Competition hosted on the Kaggle platform.
+* Designed and developed Machine Learning models for Bot detection. 
+* Generated time series and entropy features.
+* Incorporated SMOTE (tackle class imbalance problem).
+* Performed Hyperparameter Tuning to get optimal prediction AUC.
+* Achieved Top 1 on InClass Kaggle leaderboard (0.88797 AUC) and Top 60 on Global Kaggle leaderboard (0.93162 AUC)
 
 ## **Competition Description**
 
