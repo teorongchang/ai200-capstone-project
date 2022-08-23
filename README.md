@@ -4,8 +4,7 @@
 
 Please view my codes at this [nbviewer link]()
 
-##
-**Competition Description**
+## **Competition Description**
 
 Adapted from [Facebook Recruiting competition](https://www.kaggle.com/c/facebook-recruiting-iv-human-or-bot/), the purpose of this competition is to chase down robots for an online auction site. Human bidders on the site are becoming increasingly frustrated with their inability to win auctions vs. their software-controlled counterparts. As a result, usage from the site's core customer base is plummeting.
 
@@ -13,8 +12,7 @@ In order to rebuild customer happiness, the site owners need to eliminate comput
 
 The goal of this competition is to identify online auction bids that are placed by "robots", helping the site owners easily flag these users for removal from their site to prevent unfair auction activity.
 
-##
-**Data Description**
+## **Data Description**
 
 Bidder Dataset
 
@@ -39,8 +37,7 @@ Bid Dataset
 | ip | IP address of a bidder (obfuscated to protect privacy).. |
 | url  | url where the bidder was referred from (obfuscated to protect privacy). |
 
-###
-**Exploratory Data Analysis (EDA)**
+## **Exploratory Data Analysis (EDA)**
 
 My group have mainly used SweetViz and Pandas Profiling to perform EDA on the datasets to investigate on Statistics and Outliers in the dataset.
 
@@ -52,8 +49,7 @@ It was found that the training data is largely imbalanced - there are much more 
 1.0     103 <br>
 Name: outcome, dtype: int64 <br>
 
-###
-**Feature Engineering**
+## **Feature Engineering**
 
 Feature Engineering was a major block in this capstone project. The current features in the dataset were used to create new variables to enhance the performance of the model. The new features generated are:
 
@@ -76,16 +72,14 @@ Feature Engineering was a major block in this capstone project. The current feat
 | Proportion of each bidder's bids in each day | It might be useful for the investigate the proportion of bids spent in the 3 days time period within the data. |
 | Proportion of bids made during different periods of the day | It might be useful to bin the bidders' bids into different time periods of the day (i.e. Morning, Afternoon, Night). |
 
-##
-**Model Training**
+## **Model Training**
 
 Using sklearn's `.Pipeline()` function, I have managed to simplfy the modelling process into a more efficient and digistable workflow. The steps within the Pipeline involves:
 1. `SMOTE` function to treat imbalanced data.
 2. `StandardScaler()` function to standardize features by removing the mean and scaling to unit variance. 
 3. Adding `ExtraTreesClassifier`, `LGBMClassifier`, `XGBClassifier`, `CatBoostClassifier`, `GradientBoostingClassifier`, `HistGradientBoostingClassifier`, `RandomForestClassifier` seperately for Model Training.
 
-##
-**Model Evaluation**
+## **Model Evaluation**
 
 Submissions for this competition are judged on area under the ROC curve. Using roc_auc as the main metrics to evaluate the model after Model Training, it was found that ExtraTreesClassifier have performed the best. Below is a summary of the performance ranked by AUC:
 
@@ -99,8 +93,7 @@ Submissions for this competition are judged on area under the ROC curve. Using r
 | CatBoostClassifier | 0.897957 |
 | GradientBoostingClassifier | 0.884073 |
 
-##
-**Hyperparameter Tuning**
+## **Hyperparameter Tuning**
 
 To improve the performance of the ExtraTreesClassifier, my group has performed Hyperparameter Tuning using the `.RandomGridSearch()` function. Through research, my group have found good parameters to tune for ExtraTrees:
 
@@ -110,8 +103,7 @@ To improve the performance of the ExtraTreesClassifier, my group has performed H
  'min_samples_leaf': [1, 2, 5, 10], <br>
  'max_features': ['log2', 'sqrt', None]} <br>
 
-##
-**Feature Importance**
+## **Feature Importance**
 
 It is important to understand which specific feature(s) have a larger effect on the model that is being used to predict a certain variable. The top 20 features of the model are:
 
