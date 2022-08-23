@@ -45,9 +45,11 @@ My group have mainly used SweetViz and Pandas Profiling to perform EDA on the da
 
 It was found that the training data is largely imbalanced - there are much more humans than bots in the dataset.
 
-0.0    1910
-1.0     103
-Name: outcome, dtype: int64
+![image](https://user-images.githubusercontent.com/33216106/186072493-6ad5d911-0321-40a3-9a15-7cbaed9283c4.png)
+
+0.0    1910 <br>
+1.0     103 <br>
+Name: outcome, dtype: int64 <br>
 
 #### 
 **Feature Engineering**
