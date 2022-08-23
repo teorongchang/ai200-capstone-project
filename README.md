@@ -11,7 +11,7 @@ Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorong
 * Generated time series and entropy features.
 * Incorporated SMOTE (tackle class imbalance problem).
 * Performed Hyperparameter Tuning to get optimal prediction AUC.
-* Achieved Top 1 on InClass Kaggle leaderboard (0.88797 AUC) and Top 60 on Global Kaggle leaderboard (0.93162 AUC)
+* Achieved Top 1 on InClass Kaggle leaderboard (0.88797 AUC) and Top 60 on Global Kaggle leaderboard (0.93162 AUC).
 
 ## Code and Resources Used 
 **Python Version:** 3.9 
@@ -20,8 +20,6 @@ Please view my codes at this [nbviewer link](https://nbviewer.org/github/teorong
 ## **Competition Description**
 
 The purpose of this competition is to chase down robots for an online auction site. Human bidders on the site are becoming increasingly frustrated with their inability to win auctions vs. their software-controlled counterparts. As a result, usage from the site's core customer base is plummeting.
-
-In order to rebuild customer happiness, the site owners need to eliminate computer generated bidding from their auctions. Their attempt at building a model to identify these bids using behavioral data, including bid frequency over short periods of time, has proven insufficient. 
 
 The goal of this competition is to identify online auction bids that are placed by "robots", helping the site owners easily flag these users for removal from their site to prevent unfair auction activity.
 
@@ -61,6 +59,8 @@ It was found that the training data is largely imbalanced - there are much more 
 0.0    1910 <br>
 1.0     103 <br>
 Name: outcome, dtype: int64 <br>
+
+Oversampling using Synthetic Minority Oversampling Technique (SMOTE) will be implemented to trat this class imbalance issue.
 
 ## **Feature Engineering**
 
